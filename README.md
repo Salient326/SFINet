@@ -1,23 +1,22 @@
-# MSAAFNet
+# SFINet
 # Requirements
 python 3.7 + pytorch 1.9.0 + imageio 2.22.2
 # Saliency maps
-[MSAAFNet_V2_RSI_results](https://pan.baidu.com/s/1eUWvdXUZpbBFkbDJDa-Utw?pwd=lbc0) (code:lbc0) of MSAAFNet_V2 on ORSSD, EORSSD and ORSI-4199 datasets.  
-[MSAAFNet_V2_NSI_results](https://pan.baidu.com/s/1krIXhl7KF8_fqjIF7P6yyQ?pwd=lbc0) (code:lbc0) of MSAAFNet_V2 on DUT-O, DUTS-TE, HKU-IS, ECSSD and PASCAL-S datasets.  
-[MSAAFNet_V3_RSI_results](https://pan.baidu.com/s/1Ey04P98O2pOC9O3OXaq4RA) (code:lbc0) of MSAAFNet_V3 on ORSSD, EORSSD and ORSI-4199 datasets.  
-[MSAAFNet_V3_NSI_results](https://pan.baidu.com/s/1stY_QeeDg2XQgy0pCyZHiw) (code:lbc0) of MSAAFNet_V3 on DUT-O, DUTS-TE, HKU-IS, ECSSD and PASCAL-S datasets.
+We provide saliency maps of our SFINet on ORSSD, EORSSD and ORSI-4199 datasets.  
+[SFINet-MobileNetV2](https://pan.baidu.com/s/129E-gxOyUlrENarZeTW8AQ) (code:SFIN)  
+[SFINet-MobileNetV3](https://pan.baidu.com/s/1ARYS0Uun53FIRFbmrFHR0Q) (code:SFIN)  
+
 # Training
-Run train_MSAAFNet.py. We use the Canny.py to generate the edge label for training.  
-For MSAAFNet_V3, please modify paths of [MobileNetV3_backbone](https://pan.baidu.com/s/1uI3p9pCVANoBNgAuwICXCg) (code: lbc0) in ./model/MSAAFNet_V3.py.
+Run train_SFINet.py.  
+For SFINet-MobileNetV3, please modify paths of [MobileNetV3_backbone](https://pan.baidu.com/s/1aPX9yAaHtlbrSL5fP0HEfA) (code: SFIN) in ./model/SFINet_V3.py.  
 # Pre-trained model and testing
-Download the following pre-trained model and put them in ./models/MSAAFNet/, then run test_MSAAFNet.py.  
-[MSAAFNet_V2_EORSSD](https://pan.baidu.com/s/1dJDRkUC5Hc6Q28XucuISUw?pwd=lbc0) (code:lbc0)  
-[MSAAFNet_V2_ORSSD](https://pan.baidu.com/s/1IXQvmE2DCazyKGcs3TCVQQ?pwd=lbc0) (code:lbc0)  
-[MSAAFNet_V2_ORSI-4199](https://pan.baidu.com/s/1wGtUsyGd_J2OMgUwZHbZdw?pwd=lbc0) (code:lbc0)  
-[MSAAFNet_V2_DUTS-TR](https://pan.baidu.com/s/1XpBx9gPWCaxM1YnQsgELDw?pwd=lbc0) (code:lbc0)  
-[MSAAFNet_V3_EORSSD](https://pan.baidu.com/s/1p8NpIq-9Bgny57W9OUg4nQ) (code:lbc0)  
-[MSAAFNet_V3_ORSSD](https://pan.baidu.com/s/18KIMvQl3BwRl_eGN653ehw) (code:lbc0)  
-[MSAAFNet_V3_ORSI-4199](https://pan.baidu.com/s/10AE4MpdLsIiH6NhJ38dJwg) (code:lbc0)  
-[MSAAFNet_V3_DUTS-TR](https://pan.baidu.com/s/1YIq1E2h15Ik24wYQlVn-VQ) (code:lbc0)
+Download the following pre-trained model and put them in ./models/SFINet/, then run test_SFINet.py.  
+[SFINet_V2_EORSSD](https://pan.baidu.com/s/1e0hjuF1ENcxHXay5Rkaf-A) (code:SFIN)  
+[SFINet_V2_ORSSD](https://pan.baidu.com/s/1TMo4OZXwgiYoi8crK3GulA) (code:SFIN)  
+[SFINet_V2_ORSI-4199](https://pan.baidu.com/s/1jCvlBXCEsyjKTYNMdw9cGw) (code:SFIN)  
+[SFINet_V3_EORSSD](https://pan.baidu.com/s/1P0hdffO1WZyBV53bmJ3POA) (code:SFIN)  
+[SFINet_V3_ORSSD](https://pan.baidu.com/s/1XBdfKea016IoNr_-kHXwzQ) (code:SFIN)  
+[SFINet_V3_ORSI-4199](https://pan.baidu.com/s/1C2q3sJ_0VeehspQPGBeCSQ) (code:SFIN)  
+
 # Evaluation Tool
 You can use the [evaluation tool (MATLAB version)](https://github.com/MathLee/MatlabEvaluationTools) to evaluate the above saliency maps.
